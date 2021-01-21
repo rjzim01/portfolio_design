@@ -1,0 +1,560 @@
+
+
+
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	font-family:sans-serif;
+}
+h1{
+	color:black;
+	font-size:2.25rem;
+	text-align:center;
+	text-transform:uppercase;
+}
+h6{
+	color: green;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-align: center;
+}
+p{
+	color:gray;
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align: center;
+}
+section{
+	padding-top:30px;
+	padding-bottom:50px;
+}
+.container{
+	width:1100px;
+	margin:auto;
+	overflow:hidden;
+	text-align:center;
+}
+.col-33{
+	width:33%;
+	float:left;
+	text-align:center;
+}
+.col-25{
+	width:25%;
+	float:left;
+	text-align:center;
+}
+.col-50{
+	width:50%;
+	float:left;
+	text-align:center;
+}
+.content{
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:5px;
+}
+
+i{
+	font-size:2rem;
+	color:yellow;
+}
+.btn{
+	padding: 10px 25px;
+    background-color: #5b98f3;
+    border: 0px;
+    border-radius: 25px;
+    font-size: .95rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* --------------------- Header Part --------------------------- */
+
+header{
+	padding-top:15px;
+	padding-bottom:5px;
+	width:100%;
+	position:fixed;
+	background-color:#a59a8f57;
+	overflow:hidden;
+	z-index:99;
+}
+.company{
+	padding-left:35px;
+	float:left;
+}
+.company img{
+	float:left;
+	display:block;
+}
+.company h2{
+	float:left;
+	color:#cef305;
+	font-size:2rem;
+	text-transform:uppercase;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+#main-nav{
+	padding-right:35px;
+	float:right;
+	margin-top:15px;
+}
+#mobile-icon{
+	display:none;
+}
+#main-nav ul{
+	list-style:none;
+}
+#main-nav ul li{
+	float:left;
+	margin:auto 5px;
+}
+#main-nav ul li a{
+	padding:10px 10px;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:yellow;
+	font-size:.95rem;
+}
+#main-nav ul li a:hover{
+	color:green;
+	background-color:white;
+}
+.active a{
+	color:green !important;
+	background-color:white;
+}
+/* -- Home Part -- */
+#home{
+	background-image:url('../images/bac2.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:0px;
+}
+#home .author_text{
+	text-align:left; margin-top:200px;
+}
+#home p{
+	text-align:left;
+	color:yellow; text-transform:uppercase;font-size:1rem;
+}
+#home h6{
+	text-align:left;
+	color:green; text-transform:uppercase;font-size:1.25rem;
+}
+#home h2{
+	color:yellow; text-transform:uppercase;font-size:2.5rem;margin-bottom:20px;
+}
+#home img{
+	 height:600px; width:auto; float:right;
+}
+
+/* -- About me Part -- */
+#progress .col-33{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+#progress h5{
+	text-align:left;
+	text-transform:uppercase;
+	
+}
+.progressbar{
+	height:10px;
+	width:100%;
+	background-color:#dcdcdc;
+	border-radius:5px;
+	margin:10px auto;
+}
+.progress-achieve{
+	height:10px;
+	width:100%;
+	background-color:red;
+	border-radius:5px;
+}
+/* -- Services Part -- */
+#service{
+	background-image:url('../images/serve.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#service .content{
+	background-color:#ffffff47;
+	border-radius:10px;
+	padding:55px;
+}
+#service .content:hover{
+	background-color:green;
+}
+#service h3{
+	margin-top:25px;
+	margin-bottom:25px;
+	color:white;
+    text-transform:uppercase;
+}
+#service p{
+	font-size:.9rem;
+	color:white;
+}
+/* -- Project Part -- */
+#project img{
+	height:250px;
+	width:100%;
+}
+#project .content{
+	position:relative;
+}
+#project .overlay{
+	position:absolute;
+	bottom:10px;
+	background-color:black;
+	left:10px;
+	right:10px;
+	padding:15px;
+	color:white;
+	text-transform: uppercase;
+	display:none;
+}
+#project .content:hover .overlay{
+	display:block;
+}
+/* -- Review Part -- */
+#review{
+	background-image:url('../images/stats.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#review h3{
+	font-size:2rem;
+	color:white;
+	margin:25px auto 30px;
+}
+#review h5{
+	font-size:1rem;
+	color:white;
+}
+
+/* -- Contact Part -- */
+#contact{
+	background-image:url('../images/contact.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#contact h1{
+	color:white;
+	margin-bottom:35px;
+}
+#contact form input,#contact form textarea{
+	width:100%;
+	background-color: transparent;
+	font-size: 1rem;
+	padding:10px;
+	margin-bottom:15px;
+	border:1px solid white;
+	box-sizing:border-box;
+	border-radius:5px;
+}
+#contact textarea{
+	height:150px;
+}
+#contact button{
+	border-radius:5px;
+	padding:15px 35px;
+	background-color:#216fe2;
+}
+#adress{
+	margin:50px auto 25px;
+}
+#adress p{
+	font-size:.9rem;
+	color:white;
+	margin-top:15px;
+}
+/* ========footer part==========*/
+footer{
+	overflow:hidden;
+	background-color:#f5f5f5;
+	padding:25px 0;
+}
+#copy-right{
+	float:left;
+	color:#484848;
+	margin:10px;
+}
+#social{
+	float:right;
+}
+#social ul{
+	list-style:none;
+}
+#social ul li{
+	float:left;
+	margin:auto 15px;
+	height:20px;
+	width:25px;
+	border:2px solid #484848;
+	border-radius:50%;
+	padding-top:5px;
+	text-align:center;
+}
+#social ul li:last-child{
+	margin-right:0px;
+}
+
+#social ul li a i{
+	font-size:.8rem;
+	color:#484848;
+}
+#upper{
+	height:30px;
+	width:40px;
+	position:fixed;
+	right:25px;
+	bottom:25px;
+	background-color:#17161694;
+	text-align:center;
+	padding-top:10px;
+	display:none;
+}
+#upper i{
+	font-size:1rem;
+	color:white;
+}
+
+/*=================device view====================*/
+
+@media(max-width:1100px){
+	.container{
+		width:100%;
+	}
+}
+
+@media(max-width:576px){
+	.col-25, .col-33, .col-50{
+		width:100%;
+	}
+	header{
+		background-color:#141514a8;
+	}
+	.company{
+		padding-left:15px;
+	}
+	.company img{
+		height:50px;
+	}
+	
+	/*====menubar part===*/
+	#mobile-icon{
+		display:block;
+		position:absolute;
+		top:25px;
+		right:15px;
+	}
+	#main-nav{
+		width:100%;
+		padding-right:0;
+		margin-top:0;
+	}
+	#main-nav ul li{
+		float:none;
+	}
+	#main-nav ul li a{
+		display:block;
+		color:#00ff1f !important;
+	}
+	#main-nav ul li a:hover, .active a{
+		background-color:#fffdfdb8;
+		color:#pink !important;
+	}
+	/*====home part===*/
+	#home .col-50{
+		width:50%;
+	}
+	#home img{
+		height:175px;
+	}
+	#home .author_text{
+	margin-top:25px;
+    }
+    #home p{
+		font-size:.75rem;
+	}
+	#home h6{
+		font-size:.9rem;
+	}
+	#home h2{
+		font-size:1.25rem;
+		margin-bottom:10px;
+	}
+	#home .btn{
+		font-size:.75rem;
+		padding:7px 15px;
+	}
+	
+	/*====review part===*/
+	#review .col-25{
+		width:50%;
+	}
+	#review .content{
+		margin-top:30px;
+	}
+	/*====footer part===*/
+	#copy-right, #social{
+		float:none;
+		text-align:center;
+	}
+	#social ul{
+		margin-left:25%;
+	}
+}
+
+
+
+
+
+
+/**
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}*/
+#clockui
+{
+	display: flex;
+	justify-content: center;
+	align-items:  center;
+	min-height: 100vh;
+	background: #091921;
+}
+.clock
+{
+	width: 350px;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../images/clock.png);
+	background-size: cover;
+	border: 4px solid #091921;
+	border-radius: 50%;
+	box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+	            inset  0 -15px 15px rgba(255,255,255,0.05),
+	            0 15px 15px rgba(0,0,0,0.3),
+	            inset 0 15px 15px rgba(0,0,0,0.3);
+}
+.clock:before
+{
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #fff; 
+	border-radius: 50%;
+	z-index: 10000;
+}
+.clock .hour,
+.clock .min,
+.clock .sec
+{
+	position: absolute;
+}
+.clock .hour, .hr
+{
+	width: 160px;
+	height: 160px;
+}
+.clock .min, .mn
+{
+	width: 190px;
+	height: 190px;
+}
+.clock .sec, .sc
+{
+	width: 230px;
+	height: 230px;
+}
+.hr, .mn, .sc
+{
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	position: absolute;
+	border-radius: 50%;
+}
+.hr::before
+{
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 80px;
+	background: #ff103e; 
+	z-index: 10;
+	border-radius: 6px 6px 0 0;
+}
+.mn::before
+{
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 90px;
+	background: #fff; 
+	z-index: 11;
+	border-radius: 6px 6px 0 0;
+}
+.sc::before
+{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 150px;
+	background: #fff; 
+	z-index: 12;
+	border-radius: 6px 6px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1" >
+		<!-- Company Name -->
+		<title>RJ ZIM</title>
+		
+		<!-- company Sheet -->
+		<link rel="icon" href="images/logo.png">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		
+		<!-- Fontawesome Sheet -->
+		<link rel="stylesheet" href="css/all.css">
+		
+		<!-- Style Sheet -->
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			[id*="-error"]{
+				color:yellow;
+				float:left;
+				margin-top:-10px;
+			}
+		</style>
+		<script rel="script" src="js/jquery-3.5.1.js"></script>
+		<script rel="script" src="js/custom.js"></script>
+	</head>
+	<body>
+		<header>
+			<!-- == Company Name & logo == -->
+			<div class="company">
+				<img src="images/logo.png" alt="Company Logo">
+				<h2>RJ ZIM</h2>
+			</div>
+			<!-- == Menu part == -->
+			<nav id="main-nav" >
+				<div id="mobile-icon">
+					<i class="fas fa-bars"></i>
+				</div>
+				<ul>
+					<li class="active"><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#project">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a class="btn" style="border-radius:5px;" href="#">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+
+			<!-- == Slider Part == -->
+			<section id="home">
+				<div class="container">
+					<!-- == Content Part == -->
+					<div class="col-50 author_text">
+					 <div class="content">
+						<p>Introduction</p>
+						<h6>Hello, My Name is RJ ZIM</h6>
+						<h2>I'M A PROGRAMMER</h2>
+						<button class="btn" style="background:white; color:#5b98f3;">My Work</button>
+						<button class="btn">Hire Me</button>
+						</div>
+					</div>
+					<!-- == Person Part == -->
+					<div class="col-50">
+					  <div class="content">
+						<img src="images/me11.png"  alt="rj Pic">
+					  </div>
+					</div>
+				</div>
+				
+			</section>
+			<!-- == About Me Part == -->
+			<section id="about">
+				<div class="container">
+					<!-- == About Me Content == -->
+					<div>
+						<h6>About Me</h6>
+						<h1>Welcome to my Website</h1>
+						<p style="margin-top:50px;margin-bottom:50px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+					<!-- == Progress Part == -->
+					<div id="progress">
+						<!-- == Progress Content == -->
+						<div class="col-33">
+						<div class="content">
+							<h5>Web Design</h5>
+							<div class="progressbar"><!-- == Progress Bar == -->
+							<div class="progress-achieve" style="width:90%;
+	background-color:red;">
+							</div>
+							</div>
+							</div>
+						</div>
+						<div class="col-33">
+						<div class="content">
+							<h5>Php Development</h5>
+							<div class="progressbar"><!-- == Progress Bar == -->
+							<div class="progress-achieve" style="width:50%;
+	background-color:green;">
+	                        </div>
+							</div>
+							</div>
+						</div>
+						<div class="col-33">
+						<div class="content">
+							<h5>Photography</h5>
+							<div class="progressbar"><!-- == Progress Bar == -->
+							<div class="progress-achieve" style="width:30%;
+	background-color:yellow;">
+							</div>
+							</div>
+							</div>
+						</div>
+						<div class="col-33">
+						<div class="content">
+							<h5>Branding</h5>
+ 						<div class="progressbar"><!-- == Progress Bar == -->
+							<div class="progress-achieve" style="width:60%;
+	background-color:blue;">
+							</div>
+							</div>
+							</div>
+						</div>
+						<div class="col-33">
+						<div class="content">
+							<h5>Marketing</h5>
+							<div class="progressbar"><!-- == Progress Bar == -->
+							<div class="progress-achieve" style="width:70%;
+	background-color:orange;">
+							</div>
+							</div>
+							</div>
+						</div>
+						<div class="col-33">
+							<div class="content">
+							<h5>SEO</h5>
+							<div class="progressbar"><!-- == Progress Bar == -->
+							<div class="progress-achieve" style="width:80%;
+	background-color:brown;">
+							</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- == Clock Part == -->
+			<section id="clockui">
+		<div class="clock">
+			<div class="hour">
+				<div class="hr" id="hr"></div>
+			</div>
+			<div class="min">
+				<div class="mn" id="mn"></div>
+			</div>
+			<div class="sec">
+				<div class="sc" id="sc"></div>
+			</div>
+			<script type="text/javascript">
+				const deg = 6;
+				const hr = document.querySelector('#hr');
+				const mn = document.querySelector('#mn');
+				const sc = document.querySelector('#sc');
+
+				setInterval(() => {
+
+				let day = new Date();
+				let hh = day.getHours() * 30;
+				let mm = day.getMinutes() * deg;
+				let ss = day.getSeconds() * deg;
+
+				hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+				mn.style.transform = `rotateZ(${mm}deg)`;
+				sc.style.transform = `rotateZ(${ss}deg)`;
+
+				})
+				
+			</script>
+		</div>
+	</section>
+
+
+
+
+
+			<!-- == Services Part == -->
+			<section id="service">
+				<div class="container">
+					<h6 style="color:yellow;">My Services</h6>
+					<h1 style="color:white;">What I Do</h1>
+					<!-- == Services Content == -->
+					<div>
+						<!-- == Services 001 == -->
+						<div class="col-33">
+						<div class="content">
+							<i class="fas fa-list"></i>
+							<h3>Professional Code</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						</div>
+						<!-- == Services 002 == -->
+						<div class="col-33">
+						<div class="content">
+							<i class="far fa-lightbulb"></i>
+							<h3>Creative Ideas</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						</div>
+						<!-- == Services 003 == -->
+						<div class="col-33">
+						<div class="content">
+							<i class="far fa-clone"></i>
+							<h3>SEO & Marketing</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						</div>
+						<!-- == Services 004 == -->
+						<div class="col-33">
+						<div class="content">
+							<i class="far fa-heart"></i>
+							<h3>User Friendly</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						</div>
+						<!-- == Services 005 == -->
+						<div class="col-33">
+						<div class="content">
+							<i class="fas fa-magic"></i>
+							<h3>Web Development</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						</div>
+						<!-- == Services 006 == -->
+						<div class="col-33">
+						<div class="content">
+							<i class="fas fa-sliders-h"></i>
+							<h3>Portfolio Options</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- == Portfolio Part == -->
+			<section id="project">
+				<div class="container">
+					<h6>View All</h6>
+					<h1>My Projects</h1>
+					<!-- == Portfolio Content == -->
+					<div>
+						<div class="col-33"><!-- == Portfolio 001 == -->
+						<div class="content">
+							<img src="images/2p.jpg" alt="Project 1">
+							<div class="overlay">
+								<a>View</a>
+							</div>
+						   </div>
+						</div>
+						<div class="col-33"><!-- == Portfolio 002 == -->
+						<div class="content">
+							<img src="images/3p.jpg" alt="Project 1">
+							<div class="overlay">
+								<a>View</a>
+							</div>
+							</div>
+						</div>
+						<div class="col-33"><!-- == Portfolio 003 == -->
+						<div class="content">
+							<img src="images/4p.jpg" alt="Project 1">
+							<div class="overlay">
+								<a>View</a>
+							</div>
+							</div>
+						</div>
+						<div class="col-33"><!-- == Portfolio 004 == -->
+						<div class="content">
+							<img src="images/5p.jpg" alt="Project 1">
+							<div class="overlay">
+								<a>View</a>
+							</div>
+							</div>
+						</div>
+						<div class="col-33"><!-- == Portfolio 005 == -->
+						<div class="content">
+							<img src="images/g4.jpg" alt="Project 1">
+							<div class="overlay">
+								<a>View</a>
+							</div>
+							</div>
+						</div>
+						<div class="col-33"><!-- == Portfolio 006 == -->
+						<div class="content">
+							<img src="images/g2.jpg" alt="Project 1">
+							<div class="overlay">
+								<a>View</a>
+							</div>
+							</div>
+						</div>
+						<div class="col-33"><!-- == Portfolio 007 == -->
+						<div class="content">
+							<img src="images/g3.jpg" alt="Project 1">
+							<div class="overlay">
+								<a>View</a>
+							</div>
+							</div>
+						</div>
+						<div class="col-33"><!-- == Portfolio 008 == -->
+						<div class="content">
+							<img src="images/g6.jpg" alt="Project 1">
+							<div class="overlay">
+								<a>View</a>
+							</div>
+							</div>
+						</div>
+						<div class="col-33"><!-- == Portfolio 009 == -->
+						<div class="content">
+							<img src="images/g7.jpg" alt="Project 1">
+							<div class="overlay">
+								<a>View</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- == Review Part == -->
+			<section id="review">
+				<div class="container">
+					<!-- == Review Content == -->
+					<div class="col-25"><!-- == Review Part01 == -->
+					<div class="content">
+						<i class="far fa-lightbulb"></i>
+						<h3>48</h3>
+						<h5>Project Done</h5>
+					</div>
+					</div>
+					<div class="col-25"><!-- == Review Part02 == -->
+					<div class="content">
+						<i class="far fa-heart"></i>
+						<h3>42</h3>
+						<h5>Satisfied Client</h5>
+					</div>
+					</div>
+					<div class="col-25"><!-- == Review Part03 == -->
+					<div class="content">
+						<i class="fas fa-magic"></i>
+						<h3>56</h3>
+						<h5>Awards</h5>
+					</div>
+					</div>
+					<div class="col-25"><!-- == Review Part04 == -->
+					<div class="content">
+						<i class="fas fa-grin-alt"></i>
+						<h3>78</h3>
+						<h5>Happy Clients</h5>
+					</div>
+					</div>
+				</div>
+			</section>
+			<div><div>
+			<!-- == Contact Us Part == -->
+			<section id="contact">
+				<div class="container">
+					<h6>Find Me</h6>
+					<h1>Contact Me Now</h1>
+					<form name="contactForm" onsubmit="if(confirm('Do you want to send this message?')){if(myValidation() == false){return false;} }else{event.preventDefault(); return false;}">
+						<!-- == Form part 1 == -->
+						<div class="col-50">
+						  <div class="content">
+							<input type="text" name="name" value="" placeholder="Enter Your Name" onfocus="myFocus(this)">
+							<span id="name-error"></span>
+							<input type="email" name="email" value="" placeholder="Enter Your Email" onfocus="myFocus(this)">
+							<span id="email-error"></span>
+							<input type="text" name="phone" value="" placeholder="Enter Your Phone number" onfocus="myFocus(this)">
+							<span id="phone-error"></span>
+						</div>
+						</div>
+						<!-- == Form part 2 == -->
+						<div class="col-50">
+						 <div class="content">
+							<textarea name="message" placeholder="Enter Your Message.." onfocus="myFocus(this)"></textarea>
+							<span id="message-error"></span>
+							</div>
+						</div>
+						<div style="width:100%; clear:both">
+						<button class="btn" type="submit" style="border-radius:5px; padding:15px 35px;">Submit</button>
+						</div>
+					</form>
+					<!-- == Address Part == -->
+					<div id="adress">
+						<div class="col-33">
+						 <div class="content">
+							<i class="fas fa-map-marked-alt"></i>
+							<p>Address <br> Golapbagh, Dhaka-1203</p>
+						</div>
+						</div>
+						<div class="col-33">
+						 <div class="content">
+							<i class="far fa-envelope"></i>
+							<p>Email <br> ebidda@ebidda.com</p>
+						</div>
+						</div>
+						<div class="col-33">
+						<div class="content">
+							<i class="fas fa-mobile-alt"></i>
+							<p>Phone <br> 01234567891</p>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+		     <div class="container">
+			<!-- == Copyright Part == -->
+			<div id="copy-right">
+				&copy; 2020 all rights reserved by RJ ZIM
+			</div>
+			<!-- == social Part == -->
+			<nav id="social">
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</nav>
+		   </div>
+		   <div id="upper">
+		      <i class="fas fa-arrow-alt-circle-up"></i>
+		   </div>
+		</footer>
+		<!-- == Address Part == -->
+		<script>
+			
+		</script>
+		<script>
+			
+		</script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
